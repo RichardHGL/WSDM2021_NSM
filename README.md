@@ -6,12 +6,44 @@ This is our Pytorch implementation for the paper:
 
 
 ## Introduction
-In this paper, we take a new perspective that aims to leverage rich user-item interaction data (user interaction data for short) for improving the KGC task. Our work is inspired by the observation that many KG entities correspond to online items in application systems.
+Multi-hop Knowledge Base Question Answering (KBQA) aims to find the answer entities that are multiple hops away in the Knowledge Base (KB) from the entities in the question. A major challenge is the lack of supervision signals at intermediate steps. Therefore, multi-hop KBQA algorithms can only receive the feedback from the final answer, which makes the learning unstable or ineffective. To address this challenge, we propose a novel teacher-student approach for the multi-hop KBQA task. 
 
 ## Requirements:
 
 - Python 3.6
 - Pytorch >= 1.3
+
+## Dataset
+We provide three processed datasets in : WebQuestionsSP (webqsp), Complex WebQuestions 1.1 (CWQ), and MetaQA.
+* The preprocessing method used in this dataset is from [GraftNet](https://github.com/OceanskySun/GraftNet).
+* We follow [GraftNet](https://github.com/OceanskySun/GraftNet) to preprocess the datasets and construct question-specific graph.
+
+|Datasets | Train| Dev | Test | #entity| coverage |
+|:---:|---:|---:|---:|---:|---:|
+|MetaQA-1hop| 96,106 | 9,992 | 9,947 | 487.6 | 100%|
+|MetaQA-2hop| 118,980 | 14,872 | 14,872 | 469.8 | 100%|
+|MetaQA-3hop| 114,196 | 14,274 | 14,274 | 497.9| 99.0%|
+|webqsp| 2,848 | 250 | 1,639 | 1,429.8 | 94.9%|
+|CWQ| 27,639 | 3,519 | 3,531 | 1,305.8 | 79.3%|
+
+Each dataset is organized with following structure:
+- `data-name/`
+  - `*.dep`: file contains question id, question text and dependency parsing (not used in our code);
+  - `*_simple.json`: dataset file, every line describes a question and related question-specific graph;
+  - `entities.txt`: file contains a list of entities;
+  - `relations.txt`: file contains list of relations.
+  - `vocab_new.txt`: vocab file.
+  - `word_emb_300d.npy`: vocab related glove embeddings.
+
+## Training Instruction
+Download preprocessed datasets from [google drive](https://drive.google.com/drive/folders/1qRXeuoL-ArQY7pJFnMpNnBu0G-cOz6xv?usp=sharing),
+and unzip it into dataset folder, and use config --data_folder <data_path> to indicate it.
+reported models for webqsp and CWQ dataset are available at [google drive](https://drive.google.com/file/d/15J02zSJTZUFyeBv-hk-2FII3qEoIVyr2/view?usp=sharing).
+use following args to run the code
+
+```
+example commands: run_webqps.sh, run_CWQ.sh, run_metaqa.sh
+```
 
 ## Acknowledgement
 Any scientific publications that use our codes and datasets should cite the following paper as the reference:

@@ -1,0 +1,14 @@
+.idea/
+dataset/
+train.sh
+run.sh
+result/
+checkpoint/
+*.pyc
+*.log
+.vscode/
+*.lprof
+*.egg-info/
+build/
+dist/
+

@@ -42,7 +42,7 @@ reported models for webqsp and CWQ dataset are available at [google drive](https
 use following args to run the code
 
 ```
-example commands: run_webqps.sh, run_CWQ.sh, run_metaqa.sh
+example commands: run_webqsp.sh, run_CWQ.sh, run_metaqa.sh
 ```
 
 ## Acknowledgement

@@ -2,7 +2,7 @@
 
 This is our Pytorch implementation for the paper:
 
-> Gaole He, Yunshi Lan, Jing Jiang, Wayne Xin Zhao and Ji-Rong Wen (2021). Improving Multi-hop Knowledge Base Question Answering by Learning Intermediate Supervision Signals. [paper](https://arxiv.org/abs/2101.03737), [slides](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm_slides_ver2.pptx), [poster](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm-poster.pdf). In WSDM'2021.
+> Gaole He, Yunshi Lan, Jing Jiang, Wayne Xin Zhao and Ji-Rong Wen (2021). Improving Multi-hop Knowledge Base Question Answering by Learning Intermediate Supervision Signals. [paper](https://arxiv.org/abs/2101.03737), [slides](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm_slides_ver2.pptx), [poster](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm-poster.pdf), [video](https://vimeo.com/518921912). In WSDM'2021.
 
 
 ## Introduction

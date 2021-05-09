@@ -28,7 +28,7 @@ We provide three processed datasets in : WebQuestionsSP (webqsp), Complex WebQue
 Each dataset is organized with following structure:
 - `data-name/`
   - `*.dep`: file contains question id, question text and dependency parsing (not used in our code);
-  - `*_simple.json`: dataset file, every line describes a question and related question-specific graph;
+  - `*_simple.json`: dataset file, every line describes a question and related question-specific graph; you can find how this file is generated with simplify_dataset.py. Mainly map entity, relation to global id in entities.txt and relations.txt.
   - `entities.txt`: file contains a list of entities;
   - `relations.txt`: file contains list of relations.
   - `vocab_new.txt`: vocab file.

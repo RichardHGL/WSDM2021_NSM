@@ -34,6 +34,21 @@ Each dataset is organized with following structure:
   - `vocab_new.txt`: vocab file.
   - `word_emb_300d.npy`: vocab related glove embeddings.
 
+## Results
+We provide result for : WebQuestionsSP (webqsp), Complex WebQuestions 1.1 (CWQ), and MetaQA.
+* We follow [GraftNet](https://github.com/OceanskySun/GraftNet) to conduct evaluation. Baseline results come from original paper or related paper.
+
+|Models | webqsp| MetaQA-1hop | MetaQA-2hop | MetaQA-3hop| CWQ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|KV-Mem| 46.7 | 96.2 | 82.7 | 48.9 | 21.1|
+|GraftNet| 66.4 | 97.0 | 94.8 |77.7 | 32.8|
+|PullNet| 68.1 | 97.0 | **99.9** | 91.4| 45.9|
+|SRN| - | 97.0 | 95.1 | 75.2 | - |
+|EmbedKGQA| 66.6 | **97.5** | 98.8 | 94.8 | -|
+|NSM| 68.7 | 97.1 | **99.9** | **98.9**| 47.6|
+|NSM+p| 73.9 | 97.3 | **99.9** | **98.9** | 48.3|
+|NSM+h| **74.3** | 97.2 | **99.9** | **98.9** | **48.8**|
+
 ## Training Instruction
 Download preprocessed datasets from [google drive](https://drive.google.com/drive/folders/1qRXeuoL-ArQY7pJFnMpNnBu0G-cOz6xv?usp=sharing),
 and unzip it into dataset folder, and use config --data_folder <data_path> to indicate it.

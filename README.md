@@ -1,4 +1,7 @@
 # WSDM2021_NSM (Neural State Machine for KBQA)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improving-multi-hop-knowledge-base-question/semantic-parsing-on-webquestionssp)](https://paperswithcode.com/sota/semantic-parsing-on-webquestionssp?p=improving-multi-hop-knowledge-base-question)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improving-multi-hop-knowledge-base-question/knowledge-base-question-answering-on)](https://paperswithcode.com/sota/knowledge-base-question-answering-on?p=improving-multi-hop-knowledge-base-question)
 
 This is our Pytorch implementation for the paper:
 

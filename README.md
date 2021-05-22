@@ -52,6 +52,10 @@ We provide result for : WebQuestionsSP (webqsp), Complex WebQuestions 1.1 (CWQ),
 |NSM+p| 73.9 | 97.3 | **99.9** | **98.9** | 48.3|
 |NSM+h| **74.3** | 97.2 | **99.9** | **98.9** | **48.8**|
 
+The leaderboard result for NSM+h is **53.9**, and we get **rank 2** at 22th May 2021. (We are supposed to be ranked as top-1, if we submit around WSDM 2021 ddl 17th August 2020.)
+![leaderboad](asset/leaderboard.png)
+
+
 ## Training Instruction
 Download preprocessed datasets from [google drive](https://drive.google.com/drive/folders/1qRXeuoL-ArQY7pJFnMpNnBu0G-cOz6xv?usp=sharing),
 and unzip it into dataset folder, and use config --data_folder <data_path> to indicate it.

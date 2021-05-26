@@ -65,6 +65,10 @@ use following args to run the code
 ```
 example commands: run_webqsp.sh, run_CWQ.sh, run_metaqa.sh
 ```
+You can directly load trained ckpt and conduct fast evaluation with appending `--is_eval --load_experiment <ckpt_file>` to example commands.
+Notice that `--load_experiment` config only accept **relative path** to `--checkpoint_dir`.
+
+you can get detailed evaluation information about every question in test set, saved as file in `--checkpoint_dir`. For more details, you can refer to `NSM/train/evaluate_nsm.py`.
 
 ## Acknowledgement
 Any scientific publications that use our codes and datasets should cite the following paper as the reference:

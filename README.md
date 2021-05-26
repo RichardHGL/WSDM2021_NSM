@@ -5,7 +5,7 @@
 
 This is our Pytorch implementation for the paper:
 
-> Gaole He, Yunshi Lan, Jing Jiang, Wayne Xin Zhao and Ji-Rong Wen (2021). Improving Multi-hop Knowledge Base Question Answering by Learning Intermediate Supervision Signals. [paper](https://arxiv.org/abs/2101.03737), [slides](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm_slides_ver2.pptx), [poster](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm-poster.pdf), [video](https://vimeo.com/518921912). In WSDM'2021.
+> Gaole He, Yunshi Lan, Jing Jiang, Wayne Xin Zhao and Ji-Rong Wen (2021). Improving Multi-hop Knowledge Base Question Answering by Learning Intermediate Supervision Signals. [paper](https://arxiv.org/abs/2101.03737), [slides](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm_slides_ver2.pptx), [poster](https://github.com/RichardHGL/WSDM2021_NSM/blob/main/presentation/wsdm-poster.pdf), [video](https://vimeo.com/518921912), [CN blog](https://zhuanlan.zhihu.com/p/375233051). In WSDM'2021.
 
 
 ## Introduction
@@ -69,6 +69,25 @@ You can directly load trained ckpt and conduct fast evaluation with appending `-
 Notice that `--load_experiment` config only accept **relative path** to `--checkpoint_dir`.
 
 you can get detailed evaluation information about every question in test set, saved as file in `--checkpoint_dir`. For more details, you can refer to `NSM/train/evaluate_nsm.py`.
+
+Important arguments:
+```
+--data_folder          Path to load dataset.
+--checkpoint_dir       Path to save checkpoint and logs.
+--num_step             Multi-hop reasoning steps, hyperparameters.
+--entity_dim           Hidden size of reasoning module.
+--eval_every           Number of interval epoches between evaluation.
+--experiment_name      The name of log and ckpt. If not defined, it will be generated with timestamp.
+--eps                  Accumulated probability to collect answers, used to generate answers and affect Precision, Recalll and F1 metric.
+--use_self_loop        If set, add a self-loop edge to all graph nodes.
+--use_inverse_relation If set, add reverse edges to graph.
+--encode_type          If set, use type layer initialize entity embeddings. 
+--load_experiment      Path to load trained ckpt, only relative path to --checkpoint_dir is acceptable. 
+--is_eval              If set, code will run fast evaluation mode on test set with trained ckpt from --load_experiment option.
+--reason_kb            If set, model will reason step by step. Otherwise, model may focus on all nodes on graph every step.
+--load_teacher         Path to load teacher ckpt, only relative path to --checkpoint_dir is acceptable. 
+```
+
 
 ## Acknowledgement
 Any scientific publications that use our codes and datasets should cite the following paper as the reference:

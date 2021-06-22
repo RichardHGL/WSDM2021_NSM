@@ -40,7 +40,7 @@ python preprocess_step1.py CWQ/subgraph/CWQ_subgraph.txt CWQ/CWQ_step0.json CWQ/
 # usage: python preprocess_step1.py <graph_file> <in_file> <out_file>
 ```
 
-## Step 4: separating data split with id and get train/dev/test.json and put all files in CWQ/ folder
+## Step 4: separate data split with id and get train/dev/test.json and put all files in CWQ/ folder
 
 ## Step 5: parse dependency tree & constituency tree (not necessary)
 follow instructions in `preprocessing/parse/` folder

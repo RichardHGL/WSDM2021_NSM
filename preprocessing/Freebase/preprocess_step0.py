@@ -49,7 +49,7 @@ def find_entity(sparql_str):
         #     # print(tail)
         #     ent_set.add(tail[3:])
     return ent_set
-
+# data can be downloaded from https://github.com/lanyunshi/KBQA-GST
 data_folder = "/mnt/DGX-1-Vol01/gaolehe/tools/KBQA-GST/data/CWQ"
 data_file = ["ComplexWebQuestions_train.json", "ComplexWebQuestions_test_wans.json", "ComplexWebQuestions_dev.json"]
 # all_data = []

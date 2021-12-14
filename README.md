@@ -61,9 +61,10 @@ The leaderboard result for NSM+h is **53.9**, and we get **rank 2** at 22th May 
 Download preprocessed datasets from [google drive](https://drive.google.com/drive/folders/1qRXeuoL-ArQY7pJFnMpNnBu0G-cOz6xv?usp=sharing),
 and unzip it into dataset folder, and use config --data_folder <data_path> to indicate it.
 reported models for webqsp and CWQ dataset are available at [google drive](https://drive.google.com/file/d/15J02zSJTZUFyeBv-hk-2FII3qEoIVyr2/view?usp=sharing).
-use following args to run the code
+use following args to run the code. **make sure you created --checkpoint_dir, in the bash, it's supposed to have a 'checkpoint' folder in this repository.**
 
 ```
+mkdir checkpoint
 example commands: run_webqsp.sh, run_CWQ.sh, run_metaqa.sh
 ```
 You can directly load trained ckpt and conduct fast evaluation with appending `--is_eval --load_experiment <ckpt_file>` to example commands.

@@ -62,8 +62,8 @@ python load_emb_glove.py CWQ/
 
 ## Step 7: simplify json file
 ```
-# python simplify_dataset.py CWQ/
-usage: python simplify_dataset.py <data_path>
+python simplify_dataset.py CWQ/
+# usage: python simplify_dataset.py <data_path>
 ```
 
 Now, the dataset used in this repo is constructed.

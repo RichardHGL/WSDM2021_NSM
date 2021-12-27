@@ -55,15 +55,15 @@ python build_vocab_from_dep.py CWQ/ CWQ/ CWQ
 # usage: python build_vocab_from_dep.py <inpath> <dataset>
 python update_vocab_with_rel.py CWQ/ CWQ
 # usage: map_kb_id.py <in_path> <out_path>
-map_kb_id.py CWQ/ CWQ/
+python map_kb_id.py CWQ/ CWQ/
 # usage: load_emb_glove.py <data_folder>
-load_emb_glove.py CWQ/
+python load_emb_glove.py CWQ/
 ```
 
 ## Step 7: simplify json file
 ```
-# usage: python simplify_dataset.py CWQ/
-python preprocess_step1.py <data_path>
+# python simplify_dataset.py CWQ/
+usage: python simplify_dataset.py <data_path>
 ```
 
 Now, the dataset used in this repo is constructed.

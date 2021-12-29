@@ -20,6 +20,8 @@ Multi-hop Knowledge Base Question Answering (KBQA) aims to find the answer entit
 We provide three processed datasets in : WebQuestionsSP (webqsp), Complex WebQuestions 1.1 (CWQ), and MetaQA.
 * We follow [GraftNet](https://github.com/OceanskySun/GraftNet) to preprocess the datasets and construct question-specific graph.
 * You can find instructions to obtain datasets used in this repo in [preprocessing](https://github.com/RichardHGL/WSDM2021_NSM/tree/main/preprocessing) folder
+* You can also download preprocessed datasets from [google drive](https://drive.google.com/drive/folders/1qRXeuoL-ArQY7pJFnMpNnBu0G-cOz6xv?usp=sharing),
+and unzip it into dataset folder, and use config --data_folder <data_path> to indicate it.
 
 |Datasets | Train| Dev | Test | #entity| coverage |
 |:---:|---:|---:|---:|---:|---:|

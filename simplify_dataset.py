@@ -9,7 +9,7 @@ from tqdm import tqdm
 def simplify_entities(entity_list, entity2id):
     ent_id_list = []
     for entity in entity_list:
-        entity_text = entity['text']
+        entity_text = entity['text'].strip()
         if entity_text not in entity2id:
             print(entity_text)
             assert False
